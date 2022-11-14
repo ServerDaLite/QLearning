@@ -17,6 +17,17 @@ class World:
 if __name__ == "__main__":
 	WIDTH, HEIGHT = 5, 5
 	world = World(WIDTH, HEIGHT)
-	world.place(1, 1, "&")
-	world.place(2, 2, "@")
-	world.display()
+	
+	PLAYER_X = 1
+	PLAYER_Y = 1
+	
+	world.place(PLAYER_X, PLAYER_Y, "P")
+	
+	while True:
+	    world.display()
+	    user_input = input("Command >> ")
+	    
+	    if user_input.lower() == "up":
+	        world.place(PLAYER_X, PLAYER_Y, "*")
+	        PLAYER_Y += 1
+	        world.place(PLAYER_X, PLAYER_Y, "P")
