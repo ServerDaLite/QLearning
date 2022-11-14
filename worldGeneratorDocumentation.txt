@@ -1,0 +1,16 @@
+World(width, height) - Create a new enviroment with size of (width, height)
+
+World().display() - Show the world in your local terminal
+World().place(x, y, symbol) - Replaces the (X, Y) with the specified symbol
+World().obtain(x, y) - Returns the symbol at (X, Y)
+
+-----------------
+     EXAMPLE
+-----------------
+
+world_1 = World()                            - Generates the enviroment
+world_1.place(1, 1, "@")                     - Places the symbol "@" at location (1, 1)
+symbol_location = world_1.obtain(2, 2)       - Getting the symbol at location (2, 2)
+world_1.display()                            - Displaying the results into the terminal
+
+-----------------
