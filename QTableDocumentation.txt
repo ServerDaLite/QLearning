@@ -1,0 +1,29 @@
+CLASS | QTable() - Generates the memory for the Reinforced Model
+
+-------------------------------------------------------------------------
+
+QTable().append(state, num_actions) -> None
+  * state - the position the agent is in
+  * num_actions - the number of actions avaliable for use
+ 
+-------------------------------------------------------------------------
+
+QTable().get_value(x, y, action_position) -> action_value -- Gets value the value from action position
+  * x - Agent Position X
+  * y - Agent Position Y
+  * action_position - the position of action (Typically in order of actions list)
+  
+-------------------------------------------------------------------------
+
+QTable().set_value(x, y, action_position, value) -> None -- Sets the value from action position
+  * x - Agent Position X
+  * y - Agent Position Y
+  * action_position - the position of action (Typically in order of actions list)
+  * value - the value to set to
+
+-------------------------------------------------------------------------
+
+QTable().display() -> None -- Displays to local terminal
+
+-------------------------------------------------------------------------
+ 
